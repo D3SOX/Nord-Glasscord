@@ -1,7 +1,7 @@
 /**
  * @name Nord Glasscord Theme
  * @description This is a Glasscord theme that's been modified to conform to the Nord color palette.
- * @author AryToNeX, Yotta, mwittrien, gibbu, and zzzmario
+ * @author D3SOX, AryToNeX, Yotta, mwittrien, gibbu
  * @version 1.0
  * @source https://github.com/YottaGitHub/Nord-Glasscord
  * @invite SftnByN
@@ -28,23 +28,15 @@
 
 //META{"name":"BlurpleRecolor","description":"Replaces discords native blurple with your own color, change color in themefile.","author":"DevilBro","version":"1.0.0","authorId":"278543574059057154","invite":"Jx3TjNS","donate":"https://www.paypal.me/MircoWittrien","patreon":"https://www.patreon.com/MircoWittrien","website":"https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/BlurpleRecolor","source":"https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BlurpleRecolor/BlurpleRecolor.theme.css"}*//{}
 
+/* Discord Purple (Blurple) Recolor */
 @import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/BlurpleRecolor/BlurpleRecolor.css");
-@import url("https://gibbu.github.io/BetterDiscord-Themes/AdjustableServerWidth/base.css");
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
-@import url("https://zzzmario.github.io/modern-indicators/src/source.css");
-
-
-@font-face {
-	font-family: 'Baloo2';
-	font-style: normal;
-	font-weight: 200;
-	font-display: swap;
-	src: url(https://fonts.gstatic.com/s/baloo2/v1/wXKrE3kTposypRyd51jcAA.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+/* Discord Server Columns */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/ServerColumns/ServerColumns.css);
+/* Replace emojis */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/JoyPixels.css);
 
 ::-webkit-input-placeholder, body, button, input, select, textarea {
-	font-family: var(--font, "Baloo2"), Whitney;
+	font-family: var(--font, "Inter"), Whitney;
 }
 
 :root{
@@ -69,9 +61,9 @@
 	/* Discord-specific properties */
 	/* Custom (forced) titlebar */
 	/* native (default), windows, osx, linux (framed) */
-	--glasscord-titlebar: windows;
+	--glasscord-titlebar: native;
 
-	--font: 'Baloo2';
+	--font: 'SF Pro Display';
 
 	--accentcolor: 94,129,172;		/* blurple - default: 114,137,218 */
 	--linkcolor: 136,192,208;		/* link - default: 0,176,244 */
@@ -86,6 +78,11 @@
 	--selected-background: #5e81ac1a !important;
 	--hovered: #81a1c109 !important;
 	--active: #81a1c13d !important;
+    
+    --columns: 2; /* default: 3 (amount of servercolumns) */
+    --guildsize: 45; /* default: 50 (serversize in pixel) */
+    --guildgap: 3; /* default: 3 (top/bottom gap between servers in pixel) */
+    --aligndms: 0; /* default: 0 (should DMs be aligned in columns: 0 = no, 1 = yes) */
 }
 
 .theme-dark{

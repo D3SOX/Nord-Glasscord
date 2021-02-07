@@ -1,3 +1,22 @@
+# Nord-Glasscord
+
+# My Changes
+- Use native titlebar
+- Use `SF Pro Display` font (has to be installed on the system, `otf-san-francisco-pro` on the AUR)
+- Use 2 Columns
+- Powercord compatibility
+- Use JoyPixels emojis
+- Remove obsolete code
+
+## Installation
+
+### BetterDiscord
+Drop the `nord-glasscord.theme.css` in your `themes` folder
+
+### Powercord
+Open your `themes` folder and `git clone https://github.com/D3SOX/Nord-Glasscord.git`
+
+## Original Readme
 This is a modification of AryToNeX's Glasscord: https://github.com/AryToNeX/Glasscord.
 It simply combines several themes and makes them work with Glasscord to conform to the Nord Theme color palette:
 https://www.nordtheme.com/
