@@ -2,17 +2,19 @@
 
 # My Changes
 - Use native titlebar
-- Use `SF Pro Display` font (has to be installed on the system, `otf-san-francisco-pro` on the AUR)
-- Use 2 Columns
-- Add Settings icons
+- Use `SF Pro Display` font (has to be installed on the system, [`otf-san-francisco` on the AUR](https://aur.archlinux.org/packages/otf-san-francisco/))
+- Use [2 Columns](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/ServerColumns)
+- Add [Settings icons](https://github.com/snappercord/Settings-Icons)
+- Add [Codeblock icons](https://github.com/snappercord/codeblock-icons)
 - Powercord compatibility
-- Use JoyPixels emojis
+- Use [JoyPixels emojis](https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/EmojiReplace)
 - Remove obsolete code
 
 ## Installation
 
 ### BetterDiscord
 Drop the `nord-glasscord.theme.css` in your `themes` folder
+(⚠️ You won't get updates)
 
 ### Powercord
 Open your `themes` folder and `git clone https://github.com/D3SOX/Nord-Glasscord.git`
