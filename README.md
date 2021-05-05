@@ -4,6 +4,7 @@
 - Use native titlebar
 - Use `SF Pro Display` font (has to be installed on the system, `otf-san-francisco-pro` on the AUR)
 - Use 2 Columns
+- Add Settings icons
 - Powercord compatibility
 - Use JoyPixels emojis
 - Remove obsolete code
